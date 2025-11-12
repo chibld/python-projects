@@ -70,8 +70,7 @@ def main():
             phrase += choice + ' '
         elif len(temp_phrase) == limit:
             print("\n***FINISHED!!!!!!***\n")
-            print("Anagram of name =", end=" ")
-            print(phrase, file=sys.stderr)
+            print("Anagram of name = {}".format(phrase))
             print()
             try_again = input(
                 '\n\nTry again? (Press enter else "n" to quit)\n')
